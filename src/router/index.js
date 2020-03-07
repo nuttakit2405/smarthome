@@ -10,32 +10,34 @@ Vue.use(Router)
 
 let router = new Router({
   mode: 'history',
-  routes: [{
-    path: '/profile',
-    name: 'Profile',
-    component: Profile,
-    meta: {
-      auth: true
+  routes: [
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile,
+      meta: {
+        auth: true
+      }
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login,
+      meta: {
+        guest: true
+      }
+    },
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/lameyer',
+      name: 'Lameyer',
+      component: Lameyer
     }
-  },
-  {
-    path: '/login',
-    name: 'Login',
-    component: Login,
-    meta: {
-      guest: true
-    }
-  },
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/lameyer',
-    name: 'Lameyer',
-    component: Lameyer
-  }]
+  ]
 })
 
 router.beforeEach((to, from, next) => {

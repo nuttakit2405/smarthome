@@ -11,14 +11,14 @@ Vue.use(Buefy)
 Vue.config.productionTip = false
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyA0xUc_JeTSC5b9KfVWZ5jvI24agOT4BvY',
-  authDomain: 'cctapp-50940.firebaseapp.com',
-  databaseURL: 'https://cctapp-50940.firebaseio.com',
-  projectId: 'cctapp-50940',
-  storageBucket: 'cctapp-50940.appspot.com',
-  messagingSenderId: '938745634097',
-  appId: '1:938745634097:web:65436ad8e708b2117de410',
-  measurementId: 'G-2VGM610J7M'
+  apiKey: 'AIzaSyA3NM0JvMYOsn21B7Z18v1vtQnmiRdwMnY',
+  authDomain: 'statement-80301.firebaseapp.com',
+  databaseURL: 'https://statement-80301.firebaseio.com',
+  projectId: 'statement-80301',
+  storageBucket: 'statement-80301.appspot.com',
+  messagingSenderId: '960585884243',
+  appId: '1:960585884243:web:0c2a6b4ffa3a9358e0dca6',
+  measurementId: 'G-GMYKX9B66G'
 }
 firebase.initializeApp(firebaseConfig)
 

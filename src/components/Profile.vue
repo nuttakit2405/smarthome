@@ -1,13 +1,11 @@
 <template>
+  <div>
     <section>
         <navigation></navigation>
         <!-- <h5 class="center-align">Profile</h5> -->
         <div class="card horizontal" style="max-width:400px;margin:0 auto;" v-if="user">
             <div class="card-image" style="margin-top:25px;margin-left:10px;">
-                <img
-                  :src="user.photoURL"
-                  style="width:75px;height:75px;border-radius:50%;border:4px solid #333"
-                />
+                <img :src="user.photoURL" style="width:75px;height:75px;border-radius:50%;border:4px solid #333"/>
             </div>
             <div class="card-stacked">
                 <div class="card-content">
@@ -37,7 +35,9 @@
             <button @click="unUpdate" class="button is-small is-danger">cancel</button>
           </div>
         </div>
+        </div>
     </section>
+  </div>
 </template>
 
 <script>
@@ -53,7 +53,6 @@ export default {
       userNo: '',
       userEmail: '',
       editProfileStat: true
-      userEmail: ''
     }
   },
   components: {

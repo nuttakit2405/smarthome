@@ -1,5 +1,5 @@
 <template>
-  <div style="background-image: url('/static/img/banner_01.png');width:100%;height: 100vh;background-position: 50% 50%;">
+  <div style="width:100%;height: 100vh;background-position: 50% 50%;">
     <div id="firebaseui-auth-container" ></div>
   </div>
 </template>
